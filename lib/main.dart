@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:news_app/components/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:news_app/profile_account/loginPage.dart';
@@ -55,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         // color: Colors.blue[500],
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Center(
               child: SvgPicture.asset(
@@ -63,13 +64,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             SizedBox(
-              height: 40,
+              height: 80,
             ),
             Text(
               "Anytime, Anywhere",
-              style: TextStyle(
+              style: GoogleFonts.dmSans(
                 fontSize: 30,
-                color: Colors.white,
+                color: kallColor[600],
               ),
             ),
             SizedBox(
@@ -77,13 +78,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               "The Ultimate news source",
-              style: TextStyle(
+              style: GoogleFonts.dmSans(
                 fontSize: 17,
                 color: Color.fromRGBO(184, 191, 255, 1),
               ),
             ),
             SizedBox(
-              height: 50,
+              height: 130,
             ),
             GestureDetector(
               onTap: () {
@@ -108,9 +109,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Center(
                   child: Text(
                     "SIGN UP",
-                    style: TextStyle(
+                    style: GoogleFonts.dmSans(
                       fontSize: 17,
-                      color: Color.fromRGBO(184, 191, 255, 1),
+                      color: kallColor[600],
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),
@@ -132,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: MediaQuery.of(context).size.width * .7,
                 height: 40,
                 decoration: BoxDecoration(
-                  color: kallColor[300],
+                  color: kallColor[600],
                   borderRadius: BorderRadius.circular(40),
                   // border: Border.all(
                   //   width: 3.0,
@@ -142,13 +144,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Center(
                   child: Text(
                     "LOGIN",
-                    style: TextStyle(
+                    style: GoogleFonts.dmSans(
+                      fontWeight: FontWeight.w600,
                       fontSize: 17,
                       color: kbgColor,
                     ),
                   ),
                 ),
               ),
+            ),
+            SizedBox(
+              height: 50,
             ),
           ],
         ),

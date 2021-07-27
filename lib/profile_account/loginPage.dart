@@ -1,3 +1,4 @@
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:news_app/components/constants.dart';
@@ -32,10 +33,10 @@ class _LogInPageState extends State<LogInPage> {
               width: MediaQuery.of(context).size.width * .7,
               child: TextField(
                 cursorColor: kAcctBtnColor,
-                style: TextStyle(color: kAcctBtnColor),
+                style: GoogleFonts.dmSans(color: kAcctBtnColor),
                 decoration: InputDecoration(
                   labelText: "USERNAME/EMAIL",
-                  labelStyle: TextStyle(color: kAcctBtnColor),
+                  labelStyle: GoogleFonts.dmSans(color: kAcctBtnColor),
                   enabledBorder: UnderlineInputBorder(
                     borderSide: new BorderSide(
                       color: kAcctBtnColor,
@@ -51,7 +52,7 @@ class _LogInPageState extends State<LogInPage> {
               width: MediaQuery.of(context).size.width * .7,
               child: TextField(
                 cursorColor: kAcctBtnColor,
-                style: TextStyle(color: kAcctBtnColor),
+                style: GoogleFonts.dmSans(color: kAcctBtnColor),
                 obscureText: true,
                 decoration: InputDecoration(
                   suffixIcon: GestureDetector(
@@ -62,7 +63,7 @@ class _LogInPageState extends State<LogInPage> {
                     ),
                   ),
                   labelText: "PASSWORD",
-                  labelStyle: TextStyle(color: kAcctBtnColor),
+                  labelStyle: GoogleFonts.dmSans(color: kAcctBtnColor),
                   enabledBorder: UnderlineInputBorder(
                     borderSide: new BorderSide(
                       color: kAcctBtnColor,
@@ -80,7 +81,7 @@ class _LogInPageState extends State<LogInPage> {
               ),
               child: Text(
                 "Forgot Password?",
-                style: TextStyle(
+                style: GoogleFonts.dmSans(
                   color: kAcctBtnColor,
                   fontSize: 13,
                 ),
@@ -112,9 +113,10 @@ class _LogInPageState extends State<LogInPage> {
                 child: Center(
                   child: Text(
                     "LOGIN",
-                    style: TextStyle(
+                    style: GoogleFonts.dmSans(
                       fontSize: 17,
                       color: kbgColor,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
@@ -133,7 +135,7 @@ class _LogInPageState extends State<LogInPage> {
                 ),
                 Text(
                   "OR CONNECT WITH",
-                  style: TextStyle(
+                  style: GoogleFonts.dmSans(
                     fontSize: 9,
                     color: Colors.white,
                   ),
@@ -182,7 +184,7 @@ class _LogInPageState extends State<LogInPage> {
                     Center(
                       child: Text(
                         "Google",
-                        style: TextStyle(
+                        style: GoogleFonts.dmSans(
                           fontWeight: FontWeight.bold,
                           fontSize: 17,
                           color: Colors.white,
@@ -228,7 +230,7 @@ class _LogInPageState extends State<LogInPage> {
                     Center(
                       child: Text(
                         "Facebook",
-                        style: TextStyle(
+                        style: GoogleFonts.dmSans(
                           fontSize: 17,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,

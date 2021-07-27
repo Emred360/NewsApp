@@ -1,3 +1,4 @@
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:news_app/components/constants.dart';
@@ -33,10 +34,10 @@ class _SignUpPageState extends State<SignUpPage> {
               width: MediaQuery.of(context).size.width * .7,
               child: TextField(
                 cursorColor: kAcctBtnColor,
-                style: TextStyle(color: kAcctBtnColor),
+                style: GoogleFonts.dmSans(color: kAcctBtnColor),
                 decoration: InputDecoration(
                   labelText: "USERNAME",
-                  labelStyle: TextStyle(color: kAcctBtnColor),
+                  labelStyle: GoogleFonts.dmSans(color: kAcctBtnColor),
                   enabledBorder: UnderlineInputBorder(
                     borderSide: new BorderSide(
                       color: kAcctBtnColor,
@@ -52,10 +53,10 @@ class _SignUpPageState extends State<SignUpPage> {
               width: MediaQuery.of(context).size.width * .7,
               child: TextField(
                 cursorColor: kAcctBtnColor,
-                style: TextStyle(color: kAcctBtnColor),
+                style: GoogleFonts.dmSans(color: kAcctBtnColor),
                 decoration: InputDecoration(
                   labelText: "EMAIL",
-                  labelStyle: TextStyle(color: kAcctBtnColor),
+                  labelStyle: GoogleFonts.dmSans(color: kAcctBtnColor),
                   enabledBorder: UnderlineInputBorder(
                     borderSide: new BorderSide(
                       color: kAcctBtnColor,
@@ -71,7 +72,7 @@ class _SignUpPageState extends State<SignUpPage> {
               width: MediaQuery.of(context).size.width * .7,
               child: TextField(
                 cursorColor: kAcctBtnColor,
-                style: TextStyle(color: kAcctBtnColor),
+                style: GoogleFonts.dmSans(color: kAcctBtnColor),
                 obscureText: true,
                 decoration: InputDecoration(
                   suffixIcon: GestureDetector(
@@ -82,7 +83,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     ),
                   ),
                   labelText: "PASSWORD",
-                  labelStyle: TextStyle(color: kAcctBtnColor),
+                  labelStyle: GoogleFonts.dmSans(color: kAcctBtnColor),
                   enabledBorder: UnderlineInputBorder(
                     borderSide: new BorderSide(
                       color: kAcctBtnColor,
@@ -98,7 +99,7 @@ class _SignUpPageState extends State<SignUpPage> {
               width: MediaQuery.of(context).size.width * .7,
               child: TextField(
                 cursorColor: kAcctBtnColor,
-                style: TextStyle(color: kAcctBtnColor),
+                style: GoogleFonts.dmSans(color: kAcctBtnColor),
                 obscureText: true,
                 decoration: InputDecoration(
                   suffixIcon: GestureDetector(
@@ -109,7 +110,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     ),
                   ),
                   labelText: "REPEAT PASSWORD",
-                  labelStyle: TextStyle(color: kAcctBtnColor),
+                  labelStyle: GoogleFonts.dmSans(color: kAcctBtnColor),
                   enabledBorder: UnderlineInputBorder(
                     borderSide: new BorderSide(
                       color: kAcctBtnColor,
@@ -144,8 +145,9 @@ class _SignUpPageState extends State<SignUpPage> {
                 child: Center(
                   child: Text(
                     "SIGN UP",
-                    style: TextStyle(
+                    style: GoogleFonts.dmSans(
                       fontSize: 17,
+                      fontWeight: FontWeight.bold,
                       color: kbgColor,
                     ),
                   ),
@@ -158,7 +160,7 @@ class _SignUpPageState extends State<SignUpPage> {
             GestureDetector(
               child: Text(
                 "Already have an account?",
-                style: TextStyle(
+                style: GoogleFonts.dmSans(
                   color: kAcctBtnColor,
                   fontSize: 13,
                 ),
