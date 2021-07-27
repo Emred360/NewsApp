@@ -2,7 +2,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:news_app/components/constants.dart';
-import 'package:news_app/introPages/like_share_comment.dart';
+import 'package:news_app/introPages/introFirst.dart';
 import 'package:news_app/profile_account/loginPage.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -167,10 +167,11 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               onTap: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => LogInPage(),
-                    ));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LogInPage(),
+                  ),
+                );
               },
             ),
             SizedBox(
