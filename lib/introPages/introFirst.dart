@@ -73,15 +73,7 @@ incididunt ut labore et dolore magna aliqua.''',
               Row(
                 children: [
                   SizedBox(
-                    width: 20,
-                  ),
-                  Icon(
-                    Icons.arrow_back_ios,
-                    color: kallColor[600],
-                    size: 20,
-                  ),
-                  SizedBox(
-                    width: 90,
+                    width: 130,
                   ),
                   Container(
                     child: Row(

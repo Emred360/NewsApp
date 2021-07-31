@@ -2,7 +2,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:news_app/components/constants.dart';
-import 'package:news_app/homePage.dart';
+import 'package:news_app/mainPages/homePage.dart';
+import 'package:news_app/profile_account/forgotPassword.dart';
 
 class LogInPage extends StatefulWidget {
   // const LogInPage({ Key? key }) : super(key: key);
@@ -79,12 +80,22 @@ class _LogInPageState extends State<LogInPage> {
                 0,
                 10,
               ),
-              child: Text(
-                "Forgot Password?",
-                style: GoogleFonts.dmSans(
-                  color: kAcctBtnColor,
-                  fontSize: 13,
+              child: GestureDetector(
+                child: Text(
+                  "Forgot Password?",
+                  style: GoogleFonts.dmSans(
+                    color: kAcctBtnColor,
+                    fontSize: 13,
+                  ),
                 ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (ctx) => ForgotPassword(),
+                    ),
+                  );
+                },
               ),
             ),
             SizedBox(
@@ -128,7 +139,7 @@ class _LogInPageState extends State<LogInPage> {
             Row(
               children: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(60, 0, 10, 0),
+                  margin: EdgeInsets.fromLTRB(55, 0, 10, 0),
                   color: Colors.white,
                   height: 1,
                   width: 70,
@@ -141,7 +152,7 @@ class _LogInPageState extends State<LogInPage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(10, 0, 60, 0),
+                  margin: EdgeInsets.fromLTRB(10, 0, 55, 0),
                   color: Colors.white,
                   height: 1,
                   width: 70,

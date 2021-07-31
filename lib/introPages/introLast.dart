@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news_app/components/constants.dart';
+import 'package:news_app/introPages/introFirst.dart';
 
 class IntroLast extends StatefulWidget {
   // const IntroLast({ Key? key }) : super(key: key);
@@ -35,7 +36,7 @@ class _IntroLastState extends State<IntroLast> {
               Center(
                 child: SvgPicture.asset(
                   "assets/svg/Illustrationinspired.svg",
-                  width: 200,
+                  width: 225,
                 ),
               ),
               SizedBox(
@@ -74,10 +75,20 @@ class _IntroLastState extends State<IntroLast> {
                   SizedBox(
                     width: 20,
                   ),
-                  Icon(
-                    Icons.arrow_back_ios,
-                    color: kallColor[600],
-                    size: 20,
+                  GestureDetector(
+                    child: Icon(
+                      Icons.arrow_back_ios,
+                      color: kallColor[600],
+                      size: 20,
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => IntroFirst(),
+                        ),
+                      );
+                    },
                   ),
                   SizedBox(
                     width: 90,

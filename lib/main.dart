@@ -6,7 +6,9 @@ import 'package:news_app/profile_account/loginPage.dart';
 import 'package:news_app/profile_account/signUpPage.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +22,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         backgroundColor: kbgColor,
       ),
-      home: MyHomePage(title: 'News Social App'),
+      home: MyHomePage(
+        title: 'News Social App',
+      ),
     );
   }
 }
